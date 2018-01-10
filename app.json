@@ -1,0 +1,13 @@
+{
+	"name": "Node js App",
+	"description": "crawl socialbakers fb, youtube fan statistics",
+	"repository": "https://github.com/shailu26/socialbakers-crawler",
+	"logo": "",
+	"keywords": [
+		"crawler",
+    	"social",
+    	"facebook",
+    	"youtube"
+	],
+	"image": "heroku/nodejs" 
+}
