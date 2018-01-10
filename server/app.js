@@ -15,7 +15,10 @@ var port = process.env.PORT || 8080;
 // App Setup
 var app = express();
 
-mongoose.connect(config.all.mongo.uri);
+var uri = process.env.MONGOLAB_URI || config.all.mongo.uri;
+console.log('===== Connecting to DB ... =====', uri);
+
+mongoose.connect(uri);
 
 mongoose.connection.on('error', (err) => {
 	console.log(err);
@@ -23,7 +26,7 @@ mongoose.connection.on('error', (err) => {
 });
 
 mongoose.connection.on('connected', () => {
-	console.log(`connected to db: ${config.all.mongo.uri}`)
+	console.log(`connected to db: ${uri}`)
 });
 
 
