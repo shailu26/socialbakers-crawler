@@ -4,7 +4,11 @@
   "description": "Social crawler for fb/youtube pages",
   "main": "server/index.js",
   "scripts": {
+    "start": "node server/index.js",
     "test": "mocha **/*.spec.js"
+  },
+  "engines": {
+    "node": "6.11.2"
   },
   "keywords": [
     "crawler",
@@ -23,7 +27,4 @@
     "express": "^4.16.2",
     "mongoose": "^4.13.9"
   },
-  "scripts": {
-    "start": "node server/index.js"
-  }
 }
