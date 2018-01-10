@@ -1,0 +1,26 @@
+{
+  "name": "faasos",
+  "version": "1.0.0",
+  "description": "Social crawler for fb/youtube pages",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "mocha **/*.spec.js"
+  },
+  "keywords": [
+    "crawler",
+    "social",
+    "facebook",
+    "youtube"
+  ],
+  "author": "Shailesh",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "babel-preset-2017": "0.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2016": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.9"
+  }
+}
